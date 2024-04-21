@@ -1,1 +1,1 @@
-# python-course
+# A repository for python course homeworks
