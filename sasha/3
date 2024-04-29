@@ -10,9 +10,6 @@ def calculate_bmi(weight, height):
     else:
         return 'Obese'
 
-
-
-
 # Simple assertions to test the calculate_bmi function
 assert 'Underweight' in calculate_bmi(50, 1.8), "Test failed for Underweight category."
 assert 'Normal weight' in calculate_bmi(70, 1.75), "Test failed for Normal weight category."

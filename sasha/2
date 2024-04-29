@@ -9,10 +9,6 @@ def convert_temperature(temp_input):
         result = int((temp - 32) * 5/9)
         return str(result)+'C'
 
-
-    
-
-
 # Assertions to test the convert_temperature function
 assert convert_temperature('100C') == '212F', "Test failed for '100C'. Expected: '212F'"
 assert convert_temperature('32F') == '0C', "Test failed for '32F'. Expected: '0C'"
