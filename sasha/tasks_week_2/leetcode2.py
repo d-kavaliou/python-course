@@ -21,7 +21,6 @@ class Solution(object):
          
 solution = Solution()
 
-
 print(solution.reverseWords(" the sky is blue" ))
 print(solution.reverseWords("  hello world  "))
 print(solution.reverseWords("a good   example"))
