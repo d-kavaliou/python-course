@@ -15,8 +15,6 @@ class Solution(object):
 
     
 solution = Solution()
-
-
 print(solution.isPalindrome("A man, a plan, a canal: Panama1"))
 print(solution.isPalindrome("race a car"))
 print(solution.isPalindrome(" "))
