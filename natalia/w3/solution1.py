@@ -2,8 +2,21 @@ import time
 
 
 def memoize(f):
-    pass
-
+    cache = {}
+    def decorate(*args):
+        if args in cache:
+            return cache[args]
+        else:
+            cache[args] = f(*args)
+            return cache[args]
+    return decorate
+    # cache = {}
+    # def decorate(*args, **kwargs):
+    #     key = (tuple(args), hash(tuple(sorted(kwargs.items()))))
+    #     if key not in cache:
+    #         cache[key] = f(*args, **kwargs)
+    #     return cache[key]
+    # return decorate
 
 def fibonacci_naive(n):
     if n <= 1:
