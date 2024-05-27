@@ -1,3 +1,2 @@
-nums = [2,4,7,8]
-dic = zip(nums,range(len(nums)))
-print(list(dic))
+nums = {2 : 1,4 : 2,7 : 3, 8 : 4}
+print(nums.index(5))
