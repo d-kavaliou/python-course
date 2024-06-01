@@ -28,7 +28,6 @@ class LinkedList:
             #вставляем туда новый элемент
         last_node.next = new_node   
     def print_reverse(self, node):
-        #?
         if node is None:
             return
         self.print_reverse(node.next)
